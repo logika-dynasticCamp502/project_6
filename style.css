@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    background-color: #FFEDCA;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 10px 0px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24;
+    border-bottom: 5px none #FFCC66;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    border-bottom: 5px dotted #FFCC66;
+}
+
+
+
+p {
+    font-size: 20px;
+}
+
+
+.icon {
+    transform: rotate(140deg);
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+    color: black;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #6A6A6A;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.pizza {
+    background-color: #FFCC66;
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    margin: 25px 0px;
+}
+
+.pizza-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-img {
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+}
+.pizza-img-div {
+    display: flex;
+    justify-content: center;
+}
+
+.pizza-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pizza-description {
+    margin: 10px 10px 0px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.basket-button-div {
+    width: 250px;
+    height: 50px;
+    margin: 10px 25px 0px 25px;
+    background-color: #FFAA00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.basket-button {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 13px 0px 13px 0px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.pizza-four-cheese, .pizza-francesca, .pizza-pepperoni, .pizza-sicilian {
+    display: flex;
+    margin: 20px 0px 20px 0px;
+}
+
+.delete-pizza-sicilian-div, .delete-pizza-pepperoni-div, .delete-pizza-francesca-div, .delete-pizza-four-cheese-div { 
+    margin-left: auto;
+}
+
+.deleteBtn { 
+    border: 5px dotted red;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.deleteBtn:hover {
+    border: 5px double red;
+}
