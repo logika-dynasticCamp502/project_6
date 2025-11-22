@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Pizza</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <div class="icon">
+            <img src="https://learn.logikaschool.com/uploads/student/3124635/6918782b9b3d2.svg" width="55" height="90">
+        </div>
+        <hr/>
+        <nav>
+            <a class="nav-link" href="/">Головна</a>
+            <a class="nav-link" href="basket">Кошик</a>
+        </nav>
+        <hr/>
+        </header>        
+        <main>
+            <section class="basket">
+                <h1 class="basket-text">Кошик</h1>
+                <ul>
+                    <div class="pizza-sicilian">
+                        <li>Сицилійська</li>
+                        <div class="delete-pizza-sicilian-div">
+                            <a class="deleteBtn">Видалити</a>
+                        </div>
+                    </div>
+
+                    <div class="pizza-pepperoni">
+                        <li>Пепероні</li>
+                        <div class="delete-pizza-pepperoni-div">
+                            <a class="deleteBtn">Видалити</a>
+                        </div>
+                    </div>
+
+                    <div class="pizza-francesca">
+                        <li>Франческа</li>
+                        <div class="delete-pizza-francesca-div">
+                            <a class="deleteBtn">Видалити</a>
+                        </div>
+                    </div>
+
+                    <div class="pizza-four-cheese">
+                        <li>4 сири</li>
+                        <div class="delete-pizza-four-cheese-div">
+                            <a class="deleteBtn">Видалити</a>
+                        </div>
+                    </div>
+                </ul>
+            </section>
+        </main>
+        <hr/>
+        <footer>
+        <p class="footer-text">© Logika 2024</p>
+        </footer>
+
+        <script>
+        // Получаем все кнопки по классу
+            const buttons = document.querySelectorAll('.deleteBtn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+            // Удаляем родителя кнопки
+                    this.parentElement.parentElement.remove();
+                });
+            });
+</script>
+
+    </body>
+</html>
+
